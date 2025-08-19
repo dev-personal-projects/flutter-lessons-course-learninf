@@ -4,53 +4,12 @@ void main() {
   runApp(const MyApp());
 }
 
-//test gneerators
-
-Iterable<int> getNumbers() sync* {
-  yield 1;
-  yield 2;
-  yield 3;
-  yield 4;
-  yield 5;
-}
-
-Future<int> heavyFutureMultipliesByTwo(int a) {
-  return Future.delayed(const Duration(seconds: 3), () {
-    return a * 2;
-  });
-}
-
-Stream<String> getName() {
-  return Stream.periodic(const Duration(seconds: 1), (value) {
-    return 'Value is $value';
-  });
-}
-
-void test() async {
-  // final result =  heavyFutureMultipliesByTwo(10);
-  // print(result);
-
-  // await for (final value in getName()) {
-  //   print(value);
-  // }
-  // print('Stream finished working');
-
-  for (final value in getNumbers()) {
-    print(value);
-    if (value == 6) {
-      break;
-    }
-  }
-}
-
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
 
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
-    test();
-
     return MaterialApp(
       title: 'Flutter Demo',
       theme: ThemeData(
@@ -76,7 +35,7 @@ class MyApp extends StatelessWidget {
   }
 }
 
-class MyHomePage extends StatefulWidget {
+class MyHomePage extends StatefulWidget  {
   const MyHomePage({super.key, required this.title});
 
   // This widget is the home page of your application. It is stateful, meaning

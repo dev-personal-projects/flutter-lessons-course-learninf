@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "646229629446",
+    "project_id": "learningdartcollins",
+    "storage_bucket": "learningdartcollins.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:646229629446:android:4381b138d418e7c5088187",
+        "android_client_info": {
+          "package_name": "com.example.learningdart"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDz2Th6sFKomze6oedyQdSsL4ZKV062YFc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
